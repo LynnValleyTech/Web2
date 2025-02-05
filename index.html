@@ -119,7 +119,41 @@
       color: #eee; /* Light gray for text */
     }
 
+    /* Booking Section */
+    .booking {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .booking h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .booking a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+
+    .booking a:hover {
+      background-color: #555;
+    }
+
     /* Contact Section */
+    .contact-container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+      border-radius: 10px;
+    }
+
     .contact h2 {
       font-size: 2.5rem;
       margin-bottom: 20px;
@@ -178,6 +212,7 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#booking">Book an Appointment</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -185,6 +220,7 @@
     <h2>Reliable Tech Support for Your Home and Business</h2>
   </div>
 
+  <!-- Main Container -->
   <div class="container">
     <section id="about" class="about">
       <h2>About Us</h2>
@@ -205,9 +241,18 @@
       </ul>
     </section>
 
+    <!-- Book Appointment Section -->
+    <section id="booking" class="booking">
+      <h2>Book an Appointment</h2>
+      <a href="https://calendly.com/lynnvalleytech/30min" target="_blank">Schedule Now</a>
+    </section>
+  </div>
+
+  <!-- Separate Contact Container -->
+  <div class="contact-container">
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/mqaebrpn" method="POST">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
